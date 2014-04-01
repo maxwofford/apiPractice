@@ -12,6 +12,8 @@
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", "http://dogechain.info/unspent/DDonateRLUaYVdVHw2t4UZEEWmWmayoePE", false);
 		xhr.send();
+		console.log(xhr.status, xhr.statusText);
+		document.getElementById("wallet_price").innerHTML = xhr.statusText;
 	</script>
 </body>
 </html>
